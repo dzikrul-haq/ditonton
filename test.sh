@@ -35,7 +35,7 @@ runTests () {
         flutter test --coverage || error=true
       fi
       if [ -d "coverage" ]; then
-        # combine line coverage info from package tests to a common file
+        # combine line coverage info from package tests to a utils file
         sed "s/^SF:lib/SF:$escapedPath\/lib/g" coverage/lcov.info >> $2/coverage/lcov.info
       fi
     else
@@ -47,7 +47,7 @@ runTests () {
 
 runReport() {
     if [ -f "coverage/lcov.info" ] && ! [ "$TRAVIS" ]; then
-        genhtml coverage/lcov.info -o coverage --no-function-coverage -s -p `pwd`/coverage
+        perl $GENTHTML coverage/lcov.info -o coverage --no-function-coverage -s -p `pwd`/coverage
         
 		if $IsWindows || $ENV:OS; then
 			start coverage/index.html
