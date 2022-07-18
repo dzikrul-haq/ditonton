@@ -121,6 +121,7 @@ class TvDetailContent extends StatelessWidget {
                                 }
                               },
                               builder: (_, state) {
+                                print('EPISODE RUN TIME ${tv.episodeRunTime.length}');
                                 return ElevatedButton(
                                   onPressed: () async {
                                     if (!state.isSaved) {
@@ -148,9 +149,9 @@ class TvDetailContent extends StatelessWidget {
                             Text(
                               _showGenres(tv.genres),
                             ),
-                            Text(
-                              _showDuration(tv.episodeRunTime.first),
-                            ),
+                            // Text(
+                            //   _showDuration(tv.episodeRunTime.first),
+                            // ),
                             Row(
                               children: [
                                 RatingBarIndicator(
