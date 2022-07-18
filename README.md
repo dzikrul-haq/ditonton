@@ -1,4 +1,6 @@
-[![Codemagic build status](https://api.codemagic.io/apps/62d3f063b2128b03aa693839/62d3f063b2128b03aa693838/status_badge.svg)](https://codemagic.io/apps/62d3f063b2128b03aa693839/62d3f063b2128b03aa693838/latest_build)
+[![Codemagic build status](https://api.codemagic.io/apps/62d3f063b2128b03aa693839/62d3f063b2128b03aa693838/status_badge.svg)](https://codemagic.io/apps/62d3f063b2128b03aa693839/62d3f063b2128b03aa693838/latest_build) 
+
+[![build-and-test](https://github.com/dzikrul-haq/ditonton/actions/workflows/build-and-test.yaml/badge.svg)](https://github.com/dzikrul-haq/ditonton/actions/workflows/build-and-test.yaml)
 
 # a199-flutter-expert-project
 
